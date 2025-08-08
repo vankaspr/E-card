@@ -12,21 +12,32 @@
 </head>
 <body>
     <img src="../../media/images/jellyfish-background.png" alt="BackImageOne" class="background-image">
+    <div class="content">
+        <div class="music-controls">
+            <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
+            <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
+            <audio id="bgMusic" loop>
+                <source src="../../media/music/background-music.mp3" type="audio/mp3">
+                Нет поддержки фонового звука.
+            </audio>
+        </div>
 
-    <!-- Second Page -->
-    <div class="second-container">
-
-      <div class="text-box-white">
-        <p>some text</p>
-      </div>
-
-      <div class="button-and-close-icon-container">
-        <button class="yes-button">yes!!</button>
-        <div class="close-icon"></div>
-      </div>
-
+        <!-- Second Page -->
+        <div class="second-container">
+            <div class="text-box-white">
+                <p>Привет, Ева...</p>
+                <p>Спешу поздравить тебя с днём рождения!</p>
+                <p>И подарить тебе эту бодрящую открытку -_-</p>
+                <p>Готова получить свои подарки?</p>
+            </div>
+            <div class="button-and-close-icon-container">
+                <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close">
+                <button class="yes-button">yes!!</button>
+            </div>
+        </div>
     </div>
 
+    <script src="../js/index.js"></script>
     <script src="../js/second.js"></script>
 
 </body>

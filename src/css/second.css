@@ -15,28 +15,32 @@
 
 .text-box-white {
     position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     width: 383px;
     height: 256px;
     background: #FFFDF5;
     box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
+
+    padding: 20px; /* Добавляем внутренние отступы */
+    box-sizing: border-box; /* Чтобы padding не увеличивал размеры */
+    display: flex; /* Добавляем flex для центрирования */
+    flex-direction: column; /* Элементы в колонку */
+    justify-content: center; /* Вертикальное центрирование */
+    align-items: center; /* Горизонтальное центрирование */
+
 }
 
 .text-box-white p {
-
     width: 344px;
-    height: 29px;
     font-family: "Pixelify Sans", sans-serif;
     font-style: normal;
-    font-weight: 450;
+    font-weight: 500;
     font-size: 24px;
-    line-height: 24px;
     color: #155280;
     text-align: left;
+    line-height: 30px; /* Увеличиваем межстрочное расстояние */
+    margin: 1px 0; /* Отступы между параграфами */
+    word-break: break-word; /* Перенос длинных слов */
 }
 
 .button-and-close-icon-container {
@@ -49,20 +53,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 10px;
     box-sizing: border-box;
 
 }
 
 .yes-button {
     box-sizing: border-box;
-    position: absolute;
+
     width: 289px;
     height: 38px;
 
     background: #E7F1A8;
     border: 1px solid #FFFDF5;
-    box-shadow: inset 0 4px #E7F1A8;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
 
     font-family: "Pixelify Sans", sans-serif;
@@ -77,11 +81,28 @@
 
 }
 
+
+.yes-button:active {
+    background: #155280; /* Новый цвет фона */
+    color: #E7F1A8;
+    font-weight: 550;
+    box-shadow: 0 4px 4px #30AAC2;
+}
+
 .close-icon {
     width: 56px;
     height: 56px;
-    background: url("../../media/icons/close-icon.png") center/contain no-repeat;
     cursor: pointer;
     transition: transform 0.2s;
+    z-index: 5;
+}
 
+.close-icon:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.close-icon:active {
+    filter: drop-shadow(0px 4px 4px #30AAC2);
+    transform: scale(0.95);
 }
