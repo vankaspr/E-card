@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Pixelify Sans", sans-serif;
+    overflow: hidden;
+}
+
+
+.pixelify-sans-regular {
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.background-image {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hello {
+
+    position: relative;
+    width: 100px;
+    height: 100px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 2;
+
+    left: 50%;
+    bottom: calc(100% - 70%);
+    transform: translateX(-50%);
+
+
+}
+
+.start-button {
+    position: absolute;
+    width: 300px;
+    height: 61px;
+    background: #FFFDF5;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    border-color: #FFFDF5;
+
+    z-index: 3;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #155280;
+
+
+    transition: all 0.3s ease;
+}
+
+
+
+.start-button:hover {
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+
+.start-button:active {
+    background: #155280; /* Новый цвет фона */
+    color: #E7F1A8;
+    font-weight: 550;
+    box-shadow: 0 4px 4px #30AAC2;
+    transform: translate(-50%, -50%) scale(0.98); /* Лёгкое сжатие */
+}
