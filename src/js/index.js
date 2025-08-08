@@ -21,17 +21,25 @@ document.addEventListener('DOMContentLoaded', () => {
     bgMusic.volume = 0.3;
     let isPlaying = false;
 
+    // Показываем кнопку Play по умолчанию
+    playBtn.style.display = 'block';
+    pauseBtn.style.display = 'none';
+
     pauseBtn.addEventListener('click', () => {
         bgMusic.pause();
         isPlaying = false;
         toggleButtons();
-    })
+    });
 
     playBtn.addEventListener('click', () => {
-        bgMusic.play();
-        isPlaying = true;
-        toggleButtons();
-    })
+        // Воспроизводим только при явном нажатии на Play
+        bgMusic.play()
+            .then(() => {
+                isPlaying = true;
+                toggleButtons();
+            })
+            .catch(e => console.log("Playback failed:", e));
+    });
 
     function toggleButtons() {
         if (isPlaying) {
@@ -46,10 +54,4 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => playBtn.classList.remove('fade-anim'), 300);
         }
     }
-
-    const playMusic = () => {
-        bgMusic.play().catch(e => console.log("Auto play NOT PERMISSION", e));
-    };
-
-    playMusic();
 })

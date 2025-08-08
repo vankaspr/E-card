@@ -63,10 +63,10 @@ body {
 }
 
 #playBtn {
-    display: none;
+    display: block;
 }
 #pauseBtn {
-    display: block;
+    display: none;
 }
 
 @keyframes fadeIn {
@@ -76,5 +76,23 @@ body {
 
 .fade-anim {
     animation: fadeIn 0.5s ease-out;
+}
+
+.close-icon {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 5;
+}
+
+.close-icon:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.close-icon:active {
+    filter: drop-shadow(0px 4px 4px #30AAC2);
+    transform: scale(0.95);
 }
 

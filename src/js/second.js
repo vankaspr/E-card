@@ -15,10 +15,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function startSound() {
 
-        typeSound.play().catch(e => console.log("Звук заблокирован"));
+        typeSound.play().catch(e => console.log("Звук заблокирован", e));
         soundInterval = setInterval(() => {
 
-            typeSound.play().catch(e => {});
+            typeSound.play().catch(e => {} );
         }, 200);
     }
 
