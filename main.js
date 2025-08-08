@@ -22,7 +22,7 @@ async function createWindow () {
 
     try {
 
-        await win.loadFile(path.join(__dirname, 'src', 'index.html'))
+        await win.loadFile(path.join(__dirname, 'src', 'html','index.html'))
         console.log('Окно успешно загружено')
     } catch (err) {
         console.error('Ошибка загрузки файла:', err)
