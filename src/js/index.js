@@ -1,13 +1,16 @@
-const button = document.querySelector('.start-button');
-const clickSound = document.getElementById('clickSound');
+document.addEventListener('DOMContentLoaded', () => {
+    const startButton = document.querySelector('.start-button');
+    const clickSound = document.getElementById('clickSound');
 
+    startButton.addEventListener('click', async () => {
 
+        clickSound.currentTime = 0;
+        clickSound.play().catch(e => console.error("Ошибка звука:", e));
 
-
-button.addEventListener('click', () => {
-    clickSound.currentTime = 0;
-    clickSound.play();
-})
+        // Переход после начала воспроизведения
+        setTimeout(() => window.electronAPI.navigateTo('second'), 300);
+    });
+});
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -49,5 +52,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     playMusic();
-
 })
