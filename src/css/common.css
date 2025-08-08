@@ -13,6 +13,25 @@ body {
     font-style: normal;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.background-image {
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+
 .music-controls {
     position: fixed;
     top: 20px;
@@ -56,5 +75,6 @@ body {
 }
 
 .fade-anim {
-    animation: fadeIn 0.3s ease-out;
+    animation: fadeIn 0.5s ease-out;
 }
+
