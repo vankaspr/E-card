@@ -21,8 +21,8 @@ async function createWindow () {
     })
 
     try {
-        // Обрабатываем Promise от loadFile
-        await win.loadFile(path.join(__dirname, 'index.html'))
+
+        await win.loadFile(path.join(__dirname, 'src', 'index.html'))
         console.log('Окно успешно загружено')
     } catch (err) {
         console.error('Ошибка загрузки файла:', err)
