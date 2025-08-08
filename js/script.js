@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     const playMusic = () => {
-        bgMusic.play().catch(e => console.log("Auto play NOT PERMISSION"));
+        bgMusic.play().catch(e => console.log("Auto play NOT PERMISSION", e));
     };
 
     playMusic();
