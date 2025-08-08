@@ -56,11 +56,8 @@ body {
     left: 50%;
     bottom: calc(100% - 70%);
     transform: translateX(-50%);
-
     animation: jump 1s ease-in-out infinite;
-
 }
-
 
 
 .start-button {
