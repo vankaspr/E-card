@@ -37,6 +37,15 @@ body {
     z-index: 1;
 }
 
+@keyframes jump {
+    0%, 100% {
+        transform: translateY(0) translateX(-50%); /* Исходное положение */
+    }
+    50% {
+        transform: translateY(-20px) translateX(-50%); /* Прыжок вверх */
+    }
+}
+
 .hello {
 
     position: relative;
@@ -44,13 +53,15 @@ body {
     height: 100px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     z-index: 2;
-
     left: 50%;
     bottom: calc(100% - 70%);
     transform: translateX(-50%);
 
+    animation: jump 1s ease-in-out infinite;
 
 }
+
+
 
 .start-button {
     position: absolute;
