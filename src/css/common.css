@@ -12,3 +12,49 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+.music-controls {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 4;
+}
+
+.stop-play-music {
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    cursor: pointer;
+    transition: all 0.3s ease;
+    opacity: 0.8;
+
+}
+
+.stop-play-music:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.stop-play-music:active {
+    filter: drop-shadow(0px 4px 4px #E7F1A8);
+    transform: scale(0.95);
+}
+
+#playBtn {
+    display: none;
+}
+#pauseBtn {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-anim {
+    animation: fadeIn 0.3s ease-out;
+}
