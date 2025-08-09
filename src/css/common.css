@@ -96,3 +96,229 @@ body {
     transform: scale(0.95);
 }
 
+.gift-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Расстояние между боксами */
+    align-items: center;
+    width: 100%;
+    max-width: 600px; /* Ширина самого широкого элемента */
+
+}
+
+.yellow-box {
+    position: relative;
+    width: 600px;
+    height: 70px;
+    background: #E7F1A8;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.cloud {
+    width: 70px;
+    height: 70px;
+    animation: float 3s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+.blue-text-box {
+    box-sizing: border-box;
+    width: 520px;
+    height: 53px;
+    background: #62B9E6;
+    border: 3px solid #FFFDF5;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow: hidden; /* Скрываем текст, выходящий за границы */
+    position: relative; /* Для позиционирования псевдоэлемента */
+
+
+}
+
+.blue-text-box p {
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+    color: #FFFDF5;
+    white-space: nowrap; /* Запрещаем перенос текста */
+    animation: textBanner 5s linear infinite; /* Анимация */
+
+}
+
+@keyframes textBanner {
+    0% {
+        transform: translateX(-100%); /* Начинаем справа за границей */
+    }
+    100% {
+        transform: translateX(100%); /* Заканчиваем слева за границей */
+    }
+}
+
+
+.white-box  {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+
+    align-items: center;
+    width: 600px;
+    height: 312px;
+    background: #FFFDF5;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    justify-content: center;
+    padding: 0 10px;
+
+}
+
+
+.left-icon, .right-icon {
+    width: 59px;
+    height: 59px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 5;
+}
+
+.left-icon:hover, .right-icon:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.left-icon:active, .right-icon:active {
+    filter: drop-shadow(0px 4px 4px #30AAC2);
+    transform: scale(0.95);
+}
+
+
+.main-box {
+    box-sizing: border-box;
+    width: 462px;
+    height: 253px;
+    background: #FFFDF5;
+    border: 2px solid #155280;
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    position: relative;
+}
+
+.pictures-on-choice {
+
+    width: 203px;
+    height: 203px;
+    filter: drop-shadow(0px 4px 4px #30AAC2);
+
+}
+
+.main-box button {
+    all: unset;
+    display: inline-block;
+}
+
+.main-box button:focus {
+    outline: none;
+}
+
+.main-box button:hover img, .main-box button:active img {
+    filter: drop-shadow(0px 4px 8px #30AAC2);
+    transform: scale(1.10);
+    transition: all 0.3s ease;
+}
+
+.help-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5px;
+    position: relative;
+    width: 600px;
+    height: 63px;
+    background: #FFFDF5;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+}
+
+.help-icon {
+    width: 56px;
+    height: 56px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    z-index: 5;
+
+}
+
+
+.help-icon:hover {
+    transform: scale(1.05);
+    opacity: 1;
+}
+
+.help-icon:active {
+    filter: drop-shadow(0px 4px 4px #30AAC2);
+    transform: scale(0.95);
+}
+
+.get-button {
+    box-sizing: border-box;
+    width: 480px;
+    height: 40px;
+    background: #E7F1A8;
+    border: 1px solid #FFFDF5;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 24px;
+    color: #155280;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+.get-button:active {
+    background: #155280; /* Новый цвет фона */
+    color: #E7F1A8;
+    font-weight: 550;
+    box-shadow: 0 4px 4px #30AAC2;
+}
+
+
+
