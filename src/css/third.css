@@ -1,0 +1,28 @@
+.third-button {
+    box-sizing: border-box;
+    width: 291px;
+    height: 38px;
+    background: #E7F1A8;
+    border: 1px solid #FFFDF5;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    color: #155280;
+
+    cursor: pointer;
+    transition: transform 0.2s;
+
+}
+
+
+.third-button:active {
+    background: #155280; /* Новый цвет фона */
+    color: #E7F1A8;
+    font-weight: 550;
+    box-shadow: 0 4px 4px #30AAC2;
+}
