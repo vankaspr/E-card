@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <link rel="stylesheet" href="../css/common.css">
   <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../css/video.css">
+
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
   </style>
@@ -12,46 +14,74 @@
 </head>
 <body>
 
-<img src="../../media/images/cloud-background.png" alt="BackImageTwo" class="background-image">
-<div class="content">
-  <div class="music-controls">
-    <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
-    <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
-    <audio id="bgMusic" loop>
-      <source src="../../media/music/background-music.mp3" type="audio/mp3">
-      Нет поддержки фонового звука.
-    </audio>
-  </div>
-</div>
-
-<div class="gift-container">
-
-  <div class="white-gift-up">
-    <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
-    <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close">
-
-    <div class="blue-gift-box">
-      <p>because I know how much you love<br>getting happy with your favorites</p>
+    <img src="../../media/images/cloud-background.png" alt="BackImageTwo" class="background-image">
+    <div class="content">
+        <div class="music-controls">
+            <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
+            <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
+            <audio id="bgMusic" loop>
+                <source src="../../media/music/background-music.mp3" type="audio/mp3">
+              Нет поддержки фонового звука.
+            </audio>
+        </div>
     </div>
 
-    <img src="../../media/images/video.png"
-         alt="Money"
-         class="cloud"
-         style="height: 80px; width: 80px">
+    <div class="gift-container">
 
-  </div>
+    <div class="white-gift-up">
+        <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
+        <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close">
 
-  <div class="white-gift-bottom">
-    <div class="border-gift-box">
+        <div class="blue-gift-box">
+            <p>because I know how much you love<br>getting happy with your favorites</p>
+        </div>
+
+        <img src="../../media/images/video.png"
+           alt="Money"
+           class="cloud"
+           style="height: 80px; width: 80px">
 
     </div>
 
-  </div>
+    <div class="white-gift-bottom">
+
+        <div class="border-gift-box">
+            <img src="../../media/icons/arrow-left.png" class="left-icon" alt="Previous">
+
+            <div class="video-slide">
+
+                <video class="video-compilation" loop>
+                   <source src="../../media/video/geto1.MP4" type="video/mp4">
+                </video>
+
+                <video class="video-compilation" loop playsinline>
+                   <source src="../../media/video/paw.MP4" type="video/mp4">
+                </video>
+
+                <video class="video-compilation" loop playsinline>
+                    <source src="../../media/video/make.MP4" type="video/mp4">
+                </video>
+
+            </div>
+
+
+
+
+
+            <img src="../../media/icons/arrow-right.png" class="right-icon" alt="Next">
+            <audio id="LRSound" src="../../media/sounds/arrow-sound.mp3" preload="auto"></audio>
+
+        </div>
+
+    </div>
 
 </div>
 
 <script src="../js/index.js"></script>
 <script src="../js/close.js"></script>
+<script src="../js/video.js"></script>
+
+
 
 </body>
 </html>

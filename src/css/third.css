@@ -21,7 +21,7 @@
 
 
 .third-button:active {
-    background: #155280; /* Новый цвет фона */
+    background: #155280;
     color: #E7F1A8;
     font-weight: 550;
     box-shadow: 0 4px 4px #30AAC2;
@@ -33,8 +33,8 @@
     object-fit: cover;
     transition: filter 0.7s ease !important;
     will-change: filter;
-    filter: brightness(1.05); /* Улучшаем цвета */
-    border-radius: 8px; /* Закругленные углы */
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2); /* Тень */
+    filter: brightness(1.05);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
 
 }
