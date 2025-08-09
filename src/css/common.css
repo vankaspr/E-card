@@ -356,5 +356,67 @@ body {
     z-index: 0;
 }
 
+.white-gift-up {
+    position: relative;
+    width: 600px;
+    height: 100px;
+    background: #FFFDF5;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.blue-gift-box {
+    box-sizing: border-box;
+    width: 450px;
+    height: 65px;
+    background: #155280;
+    border: 1px solid #FFFDF5;
+    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.blue-gift-box p {
+    font-family: "Pixelify Sans", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    align-items: center;
+    color: #FFFDF5;
+}
+
+.white-gift-bottom {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    background: #FFFDF5;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.border-gift-box {
+    box-sizing: border-box;
+    width: 550px;
+    height: 345px;
+    background: #FFFDF5;
+    border: 2px solid #62B9E6;
+    border-radius: 8px;
+
+}
+
 
 

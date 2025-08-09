@@ -67,6 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.addEventListener('DOMContentLoaded', function() {
     const slides = document.querySelectorAll('.pictures-on-choice');
+    const slideButtons = document.querySelectorAll('.slider-container button');
     const leftArrow = document.querySelector('.left-icon');
     const rightArrow = document.querySelector('.right-icon');
     const slideSound = document.getElementById("LRSound");
@@ -76,14 +77,15 @@ document.addEventListener('DOMContentLoaded', function() {
     slides[currentSlide].classList.add('active');
 
     function showSlide(index) {
-        // Скрываем все слайды
+        // Корректируем индекс, если ушли за границы
+        if (index >= slides.length) index = 0;
+        if (index < 0) index = slides.length - 1;
+
+        // Обновляем текущий слайд
+        currentSlide = index;
+
+        // Скрываем все слайды и показываем текущий
         slides.forEach(slide => slide.classList.remove('active'));
-
-        // Корректируем индекс если вышли за границы
-        if (index >= slides.length) currentSlide = 0;
-        if (index < 0) currentSlide = slides.length - 1;
-
-        // Показываем текущий слайд
         slides[currentSlide].classList.add('active');
     }
 
@@ -103,6 +105,24 @@ document.addEventListener('DOMContentLoaded', function() {
         currentSlide++;
         showSlide(currentSlide);
         playSound();
+    });
+
+    // 2. Обработчики для кликов по слайдам (навигация)
+    slideButtons.forEach((button, index) => {
+        button.addEventListener('click', function() {
+            // Показываем слайд, на который кликнули
+            showSlide(index);
+            playSound();
+
+            // Соответствие слайдов и страниц
+            const pages = ['sunshine', 'money', 'playlist', 'video', 'cake'];
+            const targetPage = pages[index];
+
+            // Переход через 300мс (после звука)
+            setTimeout(() => {
+                window.electronAPI.navigateTo(targetPage);
+            }, 300);
+        });
     });
 
     // Навигация клавиатурой
