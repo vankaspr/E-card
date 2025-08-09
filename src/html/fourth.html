@@ -1,90 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
     </style>
     <title>Main Menu Page</title>
-</head>
-<body>
-    <img src="../../media/images/cloud-background.png" alt="BackImageTwo" class="background-image">
+  </head>
+  <body>
+    <img
+      src="../../media/images/cloud-background.png"
+      alt="BackImageTwo"
+      class="background-image"
+    />
     <div class="content">
-        <div class="music-controls">
-            <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
-            <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
-            <audio id="bgMusic" loop>
-                <source src="../../media/music/background-music.mp3" type="audio/mp3">
-                Нет поддержки фонового звука.
-            </audio>
+      <div class="music-controls">
+        <img
+          src="../../media/icons/play-icon.png"
+          class="stop-play-music"
+          id="playBtn"
+          alt="Play"
+        />
+        <img
+          src="../../media/icons/pause-icon.png"
+          class="stop-play-music"
+          id="pauseBtn"
+          alt="Pause"
+        />
+        <audio id="bgMusic" loop>
+          <source src="../../media/music/background-music.mp3" type="audio/mp3" />
+          Нет поддержки фонового звука.
+        </audio>
+      </div>
+
+      <div class="gift-container">
+        <div class="yellow-box">
+          <img src="../../media/images/cloud.png" alt="Cloud" class="cloud" />
+          <div class="blue-text-box">
+            <p>happy birthday to you! ｡:૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡</p>
+          </div>
+        </div>
+        <div class="white-box">
+          <img src="../../media/icons/arrow-left.png" class="left-icon" alt="Previous" />
+          <div class="main-box">
+            <div class="slider-container">
+              <button>
+                <img src="../../media/images/sunshine.png" class="pictures-on-choice" alt="Sun" />
+              </button>
+
+              <button>
+                <img src="../../media/images/money.png" class="pictures-on-choice" alt="Money" />
+              </button>
+
+              <button>
+                <img
+                  src="../../media/images/playlist.png"
+                  class="pictures-on-choice"
+                  alt="Playlist"
+                />
+              </button>
+
+              <button>
+                <img
+                  src="../../media/images/video.png"
+                  class="pictures-on-choice"
+                  alt="Video Scroll"
+                />
+              </button>
+
+              <button>
+                <img
+                  src="../../media/images/cake.gif"
+                  class="pictures-on-choice"
+                  style="width: 190px; height: 190px"
+                  alt="Cake"
+                />
+              </button>
+            </div>
+          </div>
+          <img src="../../media/icons/arrow-right.png" class="right-icon" alt="Next" />
+          <audio id="LRSound" src="../../media/sounds/arrow-sound.mp3" preload="auto"></audio>
         </div>
 
-        <div class="gift-container">
-
-            <div class="yellow-box">
-                <img src="../../media/images/cloud.png" alt="Cloud" class="cloud">
-                <div class="blue-text-box">
-                    <p>happy birthday to you! ｡:૮ ˶ˆ ﻌ ˆ˶ ა ﾟ:｡</p>
-                </div>
-            </div>
-
-            <div class="white-box">
-                <img src="../../media/icons/arrow-left.png" class="left-icon" alt="Previous">
-
-                <div class="main-box">
-                    <div class="slider-container">
-                        <button>
-                            <img src="../../media/images/sunshine.png" class="pictures-on-choice" alt="Sun">
-                        </button>
-
-                        <button>
-                            <img src="../../media/images/money.png" class="pictures-on-choice" alt="Money">
-                        </button>
-
-                        <button>
-                            <img src="../../media/images/playlist.png" class="pictures-on-choice" alt="Playlist">
-                        </button>
-
-                        <button>
-                            <img src="../../media/images/video.png" class="pictures-on-choice" alt="Video Scroll">
-                        </button>
-
-                        <button>
-                            <img src="../../media/images/cake.gif"
-                                 class="pictures-on-choice"
-                                 style="width: 190px; height: 190px"
-                                 alt="Cake">
-                        </button>
-
-                    </div>
-                </div>
-
-                <img src="../../media/icons/arrow-right.png" class="right-icon" alt="Next">
-                <audio id="LRSound" src="../../media/sounds/arrow-sound.mp3" preload="auto"></audio>
-
-            </div>
-
-            <div class="help-box">
-                <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
-
-                <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close">
-
-
-                <button class="get-button">welcome to the gift's zone!!</button>
-                <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
-            </div>
+        <div class="help-box">
+          <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
+          <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close" />
+          <button class="get-button">welcome to the gift's zone!!</button>
+          <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
         </div>
+      </div>
     </div>
 
     <script src="../js/index.js"></script>
     <script src="../js/close.js"></script>
     <script src="../js/fourth.js"></script>
-
-
-
-
-</body>
+  </body>
 </html>

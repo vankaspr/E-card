@@ -1,36 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/index.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/index.css" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
     </style>
     <title>Happy Birthday Eva</title>
-</head>
-<body>
-    <img src="../../media/images/jellyfish-background.png" alt="BackImageOne" class="background-image">
+  </head>
+  <body>
+    <img
+      src="../../media/images/jellyfish-background.png"
+      alt="BackImageOne"
+      class="background-image"
+    />
 
     <!-- First Page -->
     <div class="content">
-        <div class="music-controls">
-            <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
-            <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
-        </div>
+      <div class="music-controls">
+        <img
+          src="../../media/icons/play-icon.png"
+          class="stop-play-music"
+          id="playBtn"
+          alt="Play"
+        />
+        <img
+          src="../../media/icons/pause-icon.png"
+          class="stop-play-music"
+          id="pauseBtn"
+          alt="Pause"
+        />
+      </div>
 
-        <audio id="bgMusic" loop>
-            <source src="../../media/music/background-music.mp3" type="audio/mp3">
-            Нет поддержки фонового звука.
-        </audio>
+      <audio id="bgMusic" loop>
+        <source src="../../media/music/background-music.mp3" type="audio/mp3" />
+        Нет поддержки фонового звука.
+      </audio>
 
-        <div>
-            <img src="../../media/images/hello-diamond.png" alt="HelloD" class="hello">
-            <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
-            <button class="start-button">start</button>
-        </div>
+      <div>
+        <img src="../../media/images/hello-diamond.png" alt="HelloD" class="hello" />
+        <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
+        <button class="start-button">start</button>
+      </div>
     </div>
     <script src="../js/index.js"></script>
-</body>
+  </body>
 </html>

@@ -1,40 +1,37 @@
 .third-button {
-    box-sizing: border-box;
-    width: 315px;
-    height: 38px;
-    background: #E7F1A8;
-    border: 1px solid #FFFDF5;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+  box-sizing: border-box;
+  width: 315px;
+  height: 38px;
+  background: #e7f1a8;
+  border: 1px solid #fffdf5;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
-    font-family: "Pixelify Sans", sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #155280;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #155280;
 
-    cursor: pointer;
-    transition: transform 0.2s;
-
+  cursor: pointer;
+  transition: transform 0.2s;
 }
 
-
 .third-button:active {
-    background: #155280;
-    color: #E7F1A8;
-    font-weight: 550;
-    box-shadow: 0 4px 4px #30AAC2;
+  background: #155280;
+  color: #e7f1a8;
+  font-weight: 550;
+  box-shadow: 0 4px 4px #30aac2;
 }
 
 .hello-bonus-video {
-    max-height: 390px;
-    max-width: 390px;
-    object-fit: cover;
-    transition: filter 0.7s ease !important;
-    will-change: filter;
-    filter: brightness(1.05);
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-
+  max-height: 390px;
+  max-width: 390px;
+  object-fit: cover;
+  transition: filter 0.7s ease !important;
+  will-change: filter;
+  filter: brightness(1.05);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
 }

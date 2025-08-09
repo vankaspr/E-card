@@ -1,112 +1,108 @@
-/* Second page*/
-
 .second-container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    flex-direction: column;
-    gap: 20px; /* Расстояние между боксами */
-    align-items: center;
-    width: 100%;
-    max-width: 383px; /* Ширина самого широкого элемента */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  max-width: 383px;
 }
 
 .text-box-white {
-    opacity: 0;
-    animation: fadeIn 1s ease-out forwards;
+  opacity: 0;
+  animation: fadeIn 1s ease-out forwards;
 
-    position: relative;
-    width: 383px;
-    height: 256px;
-    background: #FFFDF5;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+  position: relative;
+  width: 383px;
+  height: 256px;
+  background: #fffdf5;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
-    padding: 20px; /* Добавляем внутренние отступы */
-    box-sizing: border-box; /* Чтобы padding не увеличивал размеры */
-    display: flex; /* Добавляем flex для центрирования */
-    flex-direction: column; /* Элементы в колонку */
-    justify-content: center; /* Вертикальное центрирование */
-    align-items: center; /* Горизонтальное центрирование */
-
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .text-box-white p {
-    width: 344px;
-    font-family: "Pixelify Sans", monospace;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    color: #155280;
-    text-align: left;
-    line-height: 30px; /* Увеличиваем межстрочное расстояние */
-    margin: 1px 0; /* Отступы между параграфами */
-    word-break: break-word; /* Перенос длинных слов */
+  width: 344px;
+  font-family: "Pixelify Sans", monospace;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #155280;
+  text-align: left;
+  line-height: 30px;
+  margin: 1px 0;
+  word-break: break-word;
 }
 
 #typeWriter p::after {
-    content: '_';
-    animation: blink 1s infinite;
+  content: "_";
+  animation: blink 1s infinite;
 }
 
 @keyframes blink {
-    0%, 100% { opacity: 1; }
-    50% { opacity: 0; }
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
 }
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
-
 .button-and-close-icon-container {
-    width: 383px;
-    height: 63px;
-    background: #FFFDF5;
-    box-shadow: inset 0 4px 4px #FFFDF5;
-    border-radius: 8px;
+  width: 383px;
+  height: 63px;
+  background: #fffdf5;
+  box-shadow: inset 0 4px 4px #fffdf5;
+  border-radius: 8px;
 
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 10px;
-    box-sizing: border-box;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 
 .yes-button {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 300px;
-    height: 38px;
+  width: 300px;
+  height: 38px;
 
-    background: #E7F1A8;
-    border: 1px solid #FFFDF5;
-    box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 8px;
+  background: #e7f1a8;
+  border: 1px solid #fffdf5;
+  box-shadow: inset 0 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
 
-    font-family: "Pixelify Sans", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 24px;
-    line-height: 24px;
-    color: #155280;
+  font-family: "Pixelify Sans", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #155280;
 
-    cursor: pointer;
-    transition: transform 0.2s;
-
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-
 
 .yes-button:active {
-    background: #155280; /* Новый цвет фона */
-    color: #E7F1A8;
-    font-weight: 550;
-    box-shadow: 0 4px 4px #30AAC2;
+  background: #155280;
+  color: #e7f1a8;
+  font-weight: 550;
+  box-shadow: 0 4px 4px #30aac2;
 }
-
-

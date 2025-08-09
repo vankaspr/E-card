@@ -1,50 +1,64 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" href="../css/second.css">
-    <link rel="stylesheet" href="../css/third.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <link rel="stylesheet" href="../css/common.css" />
+    <link rel="stylesheet" href="../css/second.css" />
+    <link rel="stylesheet" href="../css/third.css" />
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+      @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
     </style>
     <title>Bonus Page</title>
-</head>
-<body>
-<img src="../../media/images/jellyfish-background.png" alt="BackImageOne" class="background-image">
-<div class="content">
-    <div class="music-controls">
-        <img src="../../media/icons/play-icon.png" class="stop-play-music" id="playBtn" alt="Play">
-        <img src="../../media/icons/pause-icon.png" class="stop-play-music" id="pauseBtn" alt="Pause">
+  </head>
+  <body>
+    <img
+      src="../../media/images/jellyfish-background.png"
+      alt="BackImageOne"
+      class="background-image"
+    />
+    <div class="content">
+      <div class="music-controls">
+        <img
+          src="../../media/icons/play-icon.png"
+          class="stop-play-music"
+          id="playBtn"
+          alt="Play"
+        />
+        <img
+          src="../../media/icons/pause-icon.png"
+          class="stop-play-music"
+          id="pauseBtn"
+          alt="Pause"
+        />
         <audio id="bgMusic" loop>
-            <source src="../../media/music/background-music.mp3" type="audio/mp3">
-            Нет поддержки фонового звука.
+          <source src="../../media/music/background-music.mp3" type="audio/mp3" />
+          Нет поддержки фонового звука.
         </audio>
-    </div>
+      </div>
 
-    <!-- Third Page -->
-    <div class="second-container">
+      <!-- Third Page -->
+      <div class="second-container">
         <div class="text-box-white" style="height: 400px; width: 400px">
-
-            <video class="hello-bonus-video" autoplay loop>
-                <source src="../../media/video/hello-bonus.MP4" type="video/mp4">
-            </video>
-
-
+          <video class="hello-bonus-video" autoplay loop>
+            <source src="../../media/video/hello-bonus.MP4" type="video/mp4" />
+          </video>
         </div>
         <div class="button-and-close-icon-container" style="width: 400px">
-            <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
-            <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
-            <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close">
-            <button class="third-button">LET'S GO TO THE GIFTS ZONE</button>
+          <audio id="clickSound" src="../../media/sounds/button-click.mp3" preload="auto"></audio>
+          <audio id="closeSound" src="../../media/sounds/close-sounds.mp3" preload="auto"></audio>
+          <img src="../../media/icons/close-icon.png" class="close-icon" alt="Close" />
+          <button class="third-button">LET'S GO TO THE GIFTS ZONE</button>
         </div>
+      </div>
     </div>
-</div>
 
-<script src="../js/index.js"></script>
-<script src="../js/third.js"></script>
-<script src="../js/close.js"></script>
-</body>
+    <script src="../js/index.js"></script>
+    <script src="../js/third.js"></script>
+    <script src="../js/close.js"></script>
+  </body>
 </html>

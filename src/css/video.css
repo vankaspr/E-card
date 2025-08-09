@@ -1,26 +1,24 @@
 .video-slide {
-    transition: opacity 0.5s;
-    max-height: 300px;
-    max-width: 300px;
-    display: flex;
-    object-fit: cover;
-
+  transition: opacity 0.5s;
+  max-height: 300px;
+  max-width: 300px;
+  display: flex;
+  object-fit: cover;
 }
 
 .video-compilation {
-    max-height: 350px;
-    max-width: 300px;
-    transition: filter 0.7s ease !important;
-    will-change: filter;
-    filter: brightness(1.05);
-    border-radius: 8px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    z-index: 1;
-
+  max-height: 350px;
+  max-width: 300px;
+  transition: filter 0.7s ease !important;
+  will-change: filter;
+  filter: brightness(1.05);
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
 .video-slide.active {
-    opacity: 1;
-    z-index: 2;
-    filter: brightness(1.05);
+  opacity: 1;
+  z-index: 2;
+  filter: brightness(1.05);
 }
