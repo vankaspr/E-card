@@ -6,6 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play().catch((e) => console.error("Ошибка звука:", e));
 
-    setTimeout(() => window.electronAPI.navigateTo("fourth"), 300);
+    setTimeout(() => window.electronAPI.navigateTo("loading"), 300);
   });
 });

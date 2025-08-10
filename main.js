@@ -1,17 +1,38 @@
-const { app, BrowserWindow, ipcMain } = require("electron"); // Изменен импорт
-const path = require("path"); // Убрано node: для совместимости
+const { app, BrowserWindow, ipcMain } = require("electron");
+const path = require("path");
 
-// Hot reload для разработки
+
+function createLoadingWindow() {
+  const win = new BrowserWindow({
+    width: 600,
+    height: 400,
+    frame: false,
+    transparent: true,
+    webPreferences: {
+      nodeIntegration: true
+    }
+  });
+
+  win.loadFile('loading.html');
+
+
+  setTimeout(() => {
+    win.loadFile('fourth.html');
+  }, 5000);
+}
+
+
+
 try {
   require("electron-reloader")(module, {
     watchRenderer: true,
   });
 } catch (_) {}
 
-let mainWindow; // Глобальная переменная для хранения окна
+let mainWindow;
 
 async function createWindow() {
-  // Убираем const, используем глобальную переменную
+
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -28,7 +49,7 @@ async function createWindow() {
     await mainWindow.loadFile(path.join(__dirname, "src/html/index.html"));
     console.log("Окно успешно загружено");
 
-    // Открываем DevTools для разработки
+
     if (process.env.NODE_ENV === "development") {
       mainWindow.webContents.openDevTools();
     }
@@ -37,7 +58,7 @@ async function createWindow() {
   }
 }
 
-// Исправленный обработчик перехода
+
 ipcMain.on("navigate-to", (_, page) => {
   if (mainWindow && !mainWindow.isDestroyed()) {
     mainWindow
