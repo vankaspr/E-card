@@ -112,7 +112,6 @@ document.addEventListener("DOMContentLoaded", function () {
       // Показываем слайд, на который кликнули
       showSlide(index);
       playSound();
-      // todo: заменить на другой звук ??
 
       // Соответствие слайдов и страниц
       const pages = ["sunshine", "money", "playlist", "video", "cake"];
