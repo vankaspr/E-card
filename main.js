@@ -1,28 +1,6 @@
 const { app, BrowserWindow, ipcMain } = require("electron");
 const path = require("path");
 
-
-function createLoadingWindow() {
-  const win = new BrowserWindow({
-    width: 600,
-    height: 400,
-    frame: false,
-    transparent: true,
-    webPreferences: {
-      nodeIntegration: true
-    }
-  });
-
-  win.loadFile('loading.html');
-
-
-  setTimeout(() => {
-    win.loadFile('fourth.html');
-  }, 5000);
-}
-
-
-
 try {
   require("electron-reloader")(module, {
     watchRenderer: true,
