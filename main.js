@@ -10,7 +10,6 @@ try {
 let mainWindow;
 
 async function createWindow() {
-
   mainWindow = new BrowserWindow({
     width: 800,
     height: 600,
@@ -27,7 +26,6 @@ async function createWindow() {
     await mainWindow.loadFile(path.join(__dirname, "src/html/index.html"));
     console.log("Окно успешно загружено");
 
-
     if (process.env.NODE_ENV === "development") {
       mainWindow.webContents.openDevTools();
     }
@@ -35,7 +33,6 @@ async function createWindow() {
     console.error("Ошибка загрузки файла:", err);
   }
 }
-
 
 ipcMain.on("navigate-to", (_, page) => {
   if (mainWindow && !mainWindow.isDestroyed()) {
