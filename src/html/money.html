@@ -8,6 +8,7 @@
     />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/index.css" />
+    <link rel="stylesheet" href="../css/money.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
     </style>
@@ -59,11 +60,29 @@
       </div>
 
       <div class="white-gift-bottom">
-        <div class="border-gift-box"></div>
+        <div class="border-gift-box"
+             style="
+             justify-content: flex-start;
+             flex-direction: column; border: 2px solid #fffdf5;">
+
+          <p style="margin: 0; font-size: 20px; color: #155280">Аудио астро-прогноз для Льва на август ╲(｡◕‿◕｡)╱</p>
+
+          <div class="audio-container">
+            <audio id="meme-audio" controls>
+              <source src="../../media/sounds/astro-sound.mp3" type="audio/mpeg">
+              Звук не поддерживается.
+            </audio>
+          </div>
+
+          <div id="meme-container"></div>
+
+
+        </div>
       </div>
     </div>
 
     <script src="../js/index.js"></script>
     <script src="../js/close.js"></script>
+    <script src="../js/money.js"></script>
   </body>
 </html>
