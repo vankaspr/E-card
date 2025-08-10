@@ -71,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play().catch((e) => console.error("Ошибка звука:", e));
 
-    // Переход после начала воспроизведения
     setTimeout(() => window.electronAPI.navigateTo("third"), 300);
   });
 });

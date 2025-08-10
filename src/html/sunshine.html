@@ -8,7 +8,7 @@
     />
     <link rel="stylesheet" href="../css/common.css" />
     <link rel="stylesheet" href="../css/index.css" />
-    <link rel="stylesheet" href="../css/sunshine.css"/>
+    <link rel="stylesheet" href="../css/sunshine.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap");
     </style>
@@ -63,45 +63,71 @@
 
       <div class="white-gift-bottom">
         <div class="border-gift-box">
-
           <div class="container">
             <h1>Ты — это... ✨</h1>
 
             <div class="grid">
               <!-- 1 -->
-              <div class="grid-item" onclick="openModal('animal', 'Сильная и мудрая хитрюшка!', '../../media/images/animal.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('animal', 'Сильная и мудрая хитрюшка!', '../../media/images/animal.jpg')"
+              >
                 animal
               </div>
               <!-- 2 -->
-              <div class="grid-item" onclick="openModal('place', 'Чтоб узнать тебя приходится нырять в глубь и изучать дивный подводный мир!', '../../media/images/place.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('place', 'Чтоб узнать тебя приходится нырять в глубь и изучать дивный подводный мир!', '../../media/images/place.jpg')"
+              >
                 place
               </div>
               <!-- 3 -->
-              <div class="grid-item" onclick="openModal('plant', 'Ты невероятно красивая (´｡✪ω✪｡｀)! ', '../../media/images/plant.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('plant', 'Ты невероятно красивая (´｡✪ω✪｡｀)! ', '../../media/images/plant.jpg')"
+              >
                 plant
               </div>
               <!-- 4 -->
-              <div class="grid-item" onclick="openModal('character', 'Нет никого упорнее тебя! Всегда стремишься к своим целям и преодолеваешь преграды!', '../../media/images/chracter.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('character', 'Нет никого упорнее тебя! Всегда стремишься к своим целям и преодолеваешь преграды!', '../../media/images/chracter.jpg')"
+              >
                 character
               </div>
               <!-- 5 -->
-              <div class="grid-item" onclick="openModal('season', 'Только лето! Только хардкор! Потому что твоя улыбка и смех словно глоток холодной воды в душный степной день!', '../../media/images/season.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('season', 'Только лето! Только хардкор! Потому что твоя улыбка и смех словно глоток холодной воды в душный степной день!', '../../media/images/season.jpg')"
+              >
                 season
               </div>
               <!-- 6 -->
-              <div class="grid-item" onclick="openModal('hobby', 'Потому что у тебя удивительный внутренний мир, который хочется исследовать и слушать!', '../../media/images/hobby.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('hobby', 'Потому что у тебя удивительный внутренний мир, который хочется исследовать и слушать!', '../../media/images/hobby.jpg')"
+              >
                 hobby
               </div>
               <!-- 7 -->
-              <div class="grid-item" onclick="openModal('food', 'Ты булочка с корицей в свои 19!', '../../media/images/food.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('food', 'Ты булочка с корицей в свои 19!', '../../media/images/food.jpg')"
+              >
                 food
               </div>
               <!-- 8 -->
-              <div class="grid-item" onclick="openModal('color', 'потому что твоё присутствие успокаивает...', '../../media/images/color.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('color', 'потому что твоё присутствие успокаивает...', '../../media/images/color.jpg')"
+              >
                 color
               </div>
               <!-- 9 -->
-              <div class="grid-item" onclick="openModal('drink', 'Потому что пепсикольная ╰(✿´⌣`✿)╯♡', '../../media/images/drink.jpg')">
+              <div
+                class="grid-item"
+                onclick="openModal('drink', 'Потому что пепсикольная ╰(✿´⌣`✿)╯♡', '../../media/images/drink.jpg')"
+              >
                 drink
               </div>
             </div>
@@ -111,12 +137,11 @@
           <div class="modal" id="modal">
             <div class="modal-content">
               <span class="close-btn" onclick="closeModal()">&times;</span>
-              <img class="modal-img" id="modal-image" src="" alt="">
+              <img class="modal-img" id="modal-image" src="" alt="" />
               <h2 class="modal-title" id="modal-title"></h2>
               <p class="modal-text" id="modal-text"></p>
             </div>
           </div>
-
         </div>
       </div>
     </div>

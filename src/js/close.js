@@ -1,9 +1,7 @@
-// close.js
 document.addEventListener("DOMContentLoaded", () => {
   const closeButtons = document.querySelectorAll(".close-icon");
   const closeSound = document.getElementById("closeSound");
 
-  // Функция для воспроизведения звука закрытия
   function playCloseSound() {
     if (closeSound) {
       closeSound.currentTime = 0;

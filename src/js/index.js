@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", () => {
     clickSound.currentTime = 0;
     clickSound.play().catch((e) => console.error("Ошибка звука:", e));
 
-    // Переход после начала воспроизведения
     setTimeout(() => window.electronAPI.navigateTo("second"), 300);
   });
 });
@@ -19,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
   bgMusic.volume = 0.3;
   let isPlaying = false;
 
-  // Показываем кнопку Play по умолчанию
   playBtn.style.display = "block";
   pauseBtn.style.display = "none";
 
@@ -30,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   playBtn.addEventListener("click", () => {
-    // Воспроизводим только при явном нажатии на Play
     bgMusic
       .play()
       .then(() => {
