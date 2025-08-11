@@ -11,8 +11,8 @@ let mainWindow;
 
 async function createWindow() {
   mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 850,
+    height: 650,
     resizable: false,
     webPreferences: {
       preload: path.join(__dirname, "preload.js"),
@@ -43,6 +43,8 @@ ipcMain.on("navigate-to", (_, page) => {
 });
 
 app.commandLine.appendSwitch("autoplay-policy", "no-user-gesture-required");
+app.commandLine.appendSwitch('high-dpi-support', 'true')
+app.commandLine.appendSwitch('force-device-scale-factor', '1')
 
 app.whenReady().then(() => {
   createWindow();
