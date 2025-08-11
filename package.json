@@ -13,6 +13,7 @@
     "build-linux": "electron-builder --linux",
     "build-win": "electron-builder --win",
     "build-all": "electron-builder -wl"
+
   },
   "devDependencies": {
     "@types/jest": "^29.2.5",
