@@ -37,7 +37,7 @@
       "!node_modules/**"
     ],
     "win": {
-      "target":  "zip",
+      "target":  "portable",
       "icon": "build/icon.ico"
     },
     "linux": {
